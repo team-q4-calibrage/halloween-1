@@ -1,45 +1,26 @@
-# Halloween 1 — NightDrop
+# NightDrop — boutique Halloween
 
-Front-end uniquement pour le site e-commerce Halloween du projet Q4.
+Projet front-end React + Vite préparé à partir du code fourni. Le site comprend une page boutique responsive, un panier conservé dans le navigateur, une sélection d’ambiances, un compte à rebours jusqu’au 31 octobre, un formulaire de confirmation de démonstration et un partage de récapitulatif via WhatsApp.
 
-## Stack
-- React + Vite
-- CSS natif
-- LocalStorage pour le panier
-- Aucun backend
-- Aucun vrai paiement
-
-## Fonctionnalités
-- Hero Halloween et offre -50 %
-- Compte à rebours
-- Produits, prix barrés, stock et avis
-- Panier persistant en localStorage
-- Formulaire de checkout et page de confirmation
-- Bouton WhatsApp de démonstration
-- Responsive mobile / tablette / desktop
-- Favicon et meta-description
-
-## Installation
+## Démarrer
 
 ```bash
 npm install
 npm run dev
 ```
 
-Build de production :
+Pour générer la version de production :
 
 ```bash
 npm run build
+npm run preview
 ```
 
-## Git
+## À personnaliser avant une mise en ligne
 
-```bash
-git add .
-git commit -m "Build Halloween ecommerce front-end"
-git push
-```
+- Les produits, prix et quantités se trouvent dans `src/data/products.js`.
+- Le numéro WhatsApp se configure dans `src/main.jsx`, dans `WHATSAPP_NUMBER` (indicatif pays + numéro, chiffres seulement).
+- Les notes et avis sont des exemples signalés comme tels; remplacez-les par des avis vérifiés.
+- Le formulaire, le paiement et la confirmation sont une démonstration locale. Aucune commande ni donnée n’est envoyée à un serveur.
 
-Repository prévu : `team-q4-calibrage/halloween-1`
-
-# halloween-1
+Le projet utilise React, React DOM et Vite. Les illustrations sont des SVG intégrés au code, sans images distantes.
